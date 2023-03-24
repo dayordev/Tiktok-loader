@@ -1,0 +1,74 @@
+* {
+	font-family: tahoma,arial;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+body {
+	background-color: #000;
+	margin: 0;
+	overflow: hidden;
+}
+
+div.pf-container {
+	padding: 10% 0 0 0;
+}
+
+/* ------------------------------------tiktok loader--------------------------------------- */
+
+div.pf-tiktok-boundary {
+	width: 20px;
+	height: 10px;
+	position: relative;
+}
+
+h3 {
+	color: #fff;
+}
+
+div.pf-left-circle, div.pf-right-circle {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+div.pf-right-circle {
+	z-index: 100;
+	background-color: rgba(255,102,102,.9);
+}
+
+div.pf-left-circle {
+	background-color: rgba(102,255,255,.9);
+}
+
+.left {
+	margin-left: 0px;
+	animation: leftmove 500ms ease-in-out infinite;
+}
+
+.right {
+	margin-left: 10px;
+	animation: rightmove 500ms ease-in-out infinite;
+}
+
+
+@keyframes leftmove {
+	from {
+		margin-left: 0;
+	}
+
+	to {
+		margin-left: 7px;
+	}
+}
+
+@keyframes rightmove {
+	from {
+		margin-left: 10px;
+	}
+
+	to {
+		margin-left: -5px;
+	}
+}
